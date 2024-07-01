@@ -1,0 +1,10 @@
+services:
+  besu-qbft:
+    build: ./chain
+    ports:
+      - 8645:8545
+    healthcheck:
+      test: [ "CMD-SHELL", "grep \"00000000:2161 00000000:0000 0A\" /proc/net/tcp || grep \"00000000000000000000000000000000:2161 00000000000000000000000000000000:0000 0A\" /proc/net/tcp6 || exit 1" ]
+      interval: 100ms
+      timeout: 1s
+      retries: 100

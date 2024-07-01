@@ -1,0 +1,25 @@
+#!/bin/bash
+set -eux
+
+RLY="${RLY_BIN} --debug"
+BESU_DIR=../../chains/besu/contracts
+BESU_ADDRESSES_DIR=${BESU_DIR}/addresses
+BESU_MOCK_APP_ADDRESS=`cat ${BESU_ADDRESSES_DIR}/MockApp`
+
+# XXX set proper value
+TX_INTERNAL=120
+
+echo "!!! ibc0 -> ibc1 !!!"
+
+pushd ${BESU_DIR}
+npx hardhat --network besu_local send-packet \
+    --mockapp ${BESU_MOCK_APP_ADDRESS} \
+    --message "mock packet data" \
+    --port mockapp \
+    --channel channel-0 \
+    --timeoutheight 1000000000
+popd
+sleep 5
+${RLY} tx relay --do-refresh ibc01
+sleep ${TX_INTERNAL}
+${RLY} tx acks --do-refresh ibc01
