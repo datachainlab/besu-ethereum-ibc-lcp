@@ -6,7 +6,7 @@ This repository contains the configuration and scripts to run an e2e demo of the
 
 ### Prerequisites
 
-- Install lcp v0.2.9 in your PATH
+- Install lcp v0.2.10 in your PATH
 
 ### Run tests
 
@@ -21,13 +21,13 @@ $ make e2e-test
 
 ## Module versions
 
-- [ibc-solidity v0.3.29](https://github.com/hyperledger-labs/yui-ibc-solidity/releases/tag/v0.3.29)
-- [lcp v0.2.9](https://github.com/datachainlab/lcp/releases/tag/v0.2.9)
-- [ethereum-elc v0.0.16](https://github.com/datachainlab/ethereum-elc/releases/tag/v0.0.16)
-- [besu-qbft-elc v0.1.0](https://github.com/datachainlab/besu-qbft-elc/releases/tag/v0.1.0)
-- [lcp-go v0.2.8](https://github.com/datachainlab/lcp-go/releases/tag/v0.2.8)
+- [ibc-solidity v0.3.35](https://github.com/hyperledger-labs/yui-ibc-solidity/releases/tag/v0.3.35)
+- [lcp v0.2.10](https://github.com/datachainlab/lcp/releases/tag/v0.2.10)
+- [ethereum-elc v0.0.17](https://github.com/datachainlab/ethereum-elc/releases/tag/v0.0.17)
+- [besu-qbft-elc v0.1.3](https://github.com/datachainlab/besu-qbft-elc/releases/tag/v0.1.3)
+- [lcp-go v0.2.10](https://github.com/datachainlab/lcp-go/releases/tag/v0.2.10)
 - [lcp-solidity v0.1.14](https://github.com/datachainlab/lcp-solidity/releases/tag/v0.1.14)
-- [yui-relayer v0.5.4](https://github.com/hyperledger-labs/yui-relayer/releases/tag/v0.5.4)
-- [ethereum-ibc-relay-chain v0.3.4](https://github.com/datachainlab/ethereum-ibc-relay-chain/releases/tag/v0.3.4)
-- [ethereum-ibc-relay-prover v0.3.1](https://github.com/datachainlab/ethereum-ibc-relay-prover/releases/tag/v0.3.1)
-- [besu-ibc-relay-prover v0.2.3](https://github.com/datachainlab/besu-ibc-relay-prover/releases/tag/v0.2.3)
+- [yui-relayer v0.5.8](https://github.com/hyperledger-labs/yui-relayer/releases/tag/v0.5.8)
+- [ethereum-ibc-relay-chain v0.3.11](https://github.com/datachainlab/ethereum-ibc-relay-chain/releases/tag/v0.3.11)
+- [ethereum-ibc-relay-prover v0.3.2](https://github.com/datachainlab/ethereum-ibc-relay-prover/releases/tag/v0.3.2)
+- [besu-ibc-relay-prover v0.2.4](https://github.com/datachainlab/besu-ibc-relay-prover/releases/tag/v0.2.4)
