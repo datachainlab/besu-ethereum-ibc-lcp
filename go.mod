@@ -1,4 +1,4 @@
-module github.com/datachainlab/cosmos-ethereum-ibc-lcp
+module github.com/datachainlab/besu-ethereum-ibc-lcp
 
 go 1.22.0
 
@@ -6,7 +6,7 @@ require (
 	github.com/datachainlab/besu-ibc-relay-prover v0.2.5
 	github.com/datachainlab/ethereum-ibc-relay-chain v0.3.15
 	github.com/datachainlab/ethereum-ibc-relay-prover v0.3.6
-	github.com/datachainlab/ibc-hd-signer v0.1.0
+	github.com/datachainlab/ibc-hd-signer v0.1.1
 	github.com/datachainlab/lcp-go v0.2.13
 	github.com/hyperledger-labs/yui-relayer v0.5.10
 )
@@ -248,3 +248,5 @@ require (
 
 // See https://github.com/prysmaticlabs/grpc-gateway/issues/2
 replace github.com/grpc-ecosystem/grpc-gateway/v2 => github.com/prysmaticlabs/grpc-gateway/v2 v2.3.1-0.20230315201114-09284ba20446
+
+replace github.com/datachainlab/besu-ibc-relay-prover => ../besu-ibc-relay-prover
