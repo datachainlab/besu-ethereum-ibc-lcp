@@ -422,6 +422,8 @@ github.com/d4l3k/messagediff v1.2.1 h1:ZcAIMYsUg0EAp9X+tt8/enBE/Q8Yd5kzPynLyKptt
 github.com/d4l3k/messagediff v1.2.1/go.mod h1:Oozbb1TVXFac9FtSIxHBMnBCq2qeH/2KkEQxENCrlLo=
 github.com/danieljoos/wincred v1.1.2 h1:QLdCxFs1/Yl4zduvBdcHB8goaYk9RARS2SgLLRuAyr0=
 github.com/danieljoos/wincred v1.1.2/go.mod h1:GijpziifJoIBfYh+S7BbkdUTU4LfM+QnGqR5Vl2tAx0=
+github.com/datachainlab/besu-ibc-relay-prover v0.2.6 h1:Q28F+z6RVji3eBPj8akdXX324GCfW2D/AsT1WH8zZfg=
+github.com/datachainlab/besu-ibc-relay-prover v0.2.6/go.mod h1:x3W/41M0557w7cuNL9VsICQ8yQzVi+R/95BgeiRES/o=
 github.com/datachainlab/ethereum-ibc-relay-chain v0.3.15 h1:5bB5UZBrn3ktTkbEVTvRVxyo5MHPrgTgODyMV6Skq+4=
 github.com/datachainlab/ethereum-ibc-relay-chain v0.3.15/go.mod h1:rwOM29wMba4Ze1j8fIeHhIsVM/p1tXrf8/qDEntLBCc=
 github.com/datachainlab/ethereum-ibc-relay-prover v0.3.6 h1:fUFCsWfyH4BhRUNuMwDYdSgvEGt67jj3g7dSj1ETVUE=
