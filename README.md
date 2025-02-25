@@ -29,5 +29,5 @@ $ make e2e-test
 - [lcp-solidity v0.1.17](https://github.com/datachainlab/lcp-solidity/releases/tag/v0.1.17)
 - [yui-relayer v0.5.10](https://github.com/hyperledger-labs/yui-relayer/releases/tag/v0.5.10)
 - [ethereum-ibc-relay-chain v0.3.15](https://github.com/datachainlab/ethereum-ibc-relay-chain/releases/tag/v0.3.15)
-- [ethereum-ibc-relay-prover v0.3.6](https://github.com/datachainlab/ethereum-ibc-relay-prover/releases/tag/v0.3.6)
-- [besu-ibc-relay-prover v0.2.5](https://github.com/datachainlab/besu-ibc-relay-prover/releases/tag/v0.2.5)
+- [ethereum-ibc-relay-prover v0.3.8](https://github.com/datachainlab/ethereum-ibc-relay-prover/releases/tag/v0.3.8)
+- [besu-ibc-relay-prover v0.2.6](https://github.com/datachainlab/besu-ibc-relay-prover/releases/tag/v0.2.6)

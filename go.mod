@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/datachainlab/besu-ibc-relay-prover v0.2.6
 	github.com/datachainlab/ethereum-ibc-relay-chain v0.3.15
-	github.com/datachainlab/ethereum-ibc-relay-prover v0.3.6
+	github.com/datachainlab/ethereum-ibc-relay-prover v0.3.8
 	github.com/datachainlab/ibc-hd-signer v0.1.1
 	github.com/datachainlab/lcp-go v0.2.13
 	github.com/hyperledger-labs/yui-relayer v0.5.10

@@ -1,5 +1,8 @@
 require("@nomicfoundation/hardhat-toolbox");
 
+const mnemonic =
+  "math razor capable expose worth grape metal sunset metal sudden usage scheme";
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -18,7 +21,7 @@ module.exports = {
     eth_local: {
       url: 'http://geth:8546',
       accounts: {
-        mnemonic: "math razor capable expose worth grape metal sunset metal sudden usage scheme",
+        mnemonic: mnemonic,
         path: "m/44'/60'/0'/0",
         initialIndex: 0,
         count: 1,
