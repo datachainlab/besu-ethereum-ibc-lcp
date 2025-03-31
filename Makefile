@@ -144,6 +144,7 @@ yrly:
 
 ######## E2E test ########
 
+E2E_OPTIONS = ""
 LCP_BIN ?= lcp
 
 .PHONY: build-images
@@ -157,4 +158,4 @@ prepare-contracts:
 
 .PHONY: e2e-test
 e2e-test: $(Signed_RustEnclave_Name) yrly
-	LCP_BIN=$(LCP_BIN) ./tests/e2e/scripts/run_e2e_test.sh
+	LCP_BIN=$(LCP_BIN) ./tests/e2e/scripts/run_e2e_test.sh $(E2E_OPTIONS)
