@@ -1,4 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-foundry");
+require("hardhat-contract-sizer");
 require("./scripts/sendPacket");
 
 const mnemonic =
@@ -11,6 +13,7 @@ module.exports = {
   solidity: {
     version: "0.8.28",
     settings: {
+      viaIR: true,
       optimizer: {
         enabled: true,
         runs: 9_999_999

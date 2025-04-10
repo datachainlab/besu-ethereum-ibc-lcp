@@ -1,4 +1,4 @@
-FROM hyperledger/besu:25.1.0
+FROM hyperledger/besu:25.3.0
 
 USER root
 
@@ -9,5 +9,5 @@ RUN besu operator generate-blockchain-config --config-file=qbftConfigFile.json -
 RUN cp ./networkFiles/keys/*/* ./data/
 
 EXPOSE 8545 8546 8547 30303
-ENTRYPOINT [ "besu" ]
+ENTRYPOINT ["besu"]
 CMD ["--data-path", "./data", "--genesis-file", "./networkFiles/genesis.json", "--rpc-http-enabled", "--rpc-http-api", "ETH,NET,IBFT,QBFT,DEBUG", "--host-allowlist", "*", "--rpc-http-cors-origins", "all", "--revert-reason-enabled", "--min-gas-price", "0"]

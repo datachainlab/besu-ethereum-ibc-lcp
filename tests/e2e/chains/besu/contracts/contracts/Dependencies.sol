@@ -19,4 +19,9 @@ import {MockClient} from "@hyperledger-labs/yui-ibc-solidity/contracts/clients/m
 
 import {LCPProtoMarshaler} from "@datachainlab/lcp-solidity/contracts/LCPProtoMarshaler.sol";
 import {AVRValidator} from "@datachainlab/lcp-solidity/contracts/AVRValidator.sol";
-import {LCPClient} from "@datachainlab/lcp-solidity/contracts/LCPClient.sol";
+import {LCPClientIAS} from "@datachainlab/lcp-solidity/contracts/LCPClientIAS.sol";
+import {DCAPValidator} from "@datachainlab/lcp-solidity/contracts/DCAPValidator.sol";
+import {LCPClientZKDCAP} from "@datachainlab/lcp-solidity/contracts/LCPClientZKDCAP.sol";
+
+import {RiscZeroGroth16Verifier} from "risc0-ethereum/contracts/src/groth16/RiscZeroGroth16Verifier.sol";
+import {RiscZeroMockVerifier} from "risc0-ethereum/contracts/src/test/RiscZeroMockVerifier.sol";
