@@ -11,9 +11,4 @@ COPY ./config /config
 # Init
 RUN geth --datadir=/execution init --state.scheme hash --db.engine=leveldb /execution/genesis.json
 
-# Import keys
-RUN geth --datadir=/execution account import --password /dev/null /config/dev-key0.prv
-RUN geth --datadir=/execution account import --password /dev/null /config/dev-key1.prv
-
-
 ENTRYPOINT ["geth"]

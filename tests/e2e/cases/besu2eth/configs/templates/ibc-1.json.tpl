@@ -42,6 +42,9 @@
       "refresh_threshold_rate": {
         "numerator": 2,
         "denominator": 3
+      },
+      "minimal_fork_sched": {
+        "electra": 82125
       }
     },
     "lcp_service_address": "localhost:50051",

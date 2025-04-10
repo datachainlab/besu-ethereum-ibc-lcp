@@ -37,7 +37,11 @@
       "@type": "/relayer.provers.qbft.config.ProverConfig",
       "consensus_type": "qbft",
       "trusting_period": "336h",
-      "max_clock_drift": "30s"
+      "max_clock_drift": "30s",
+      "refresh_threshold_rate": {
+        "numerator": 2,
+        "denominator": 3
+      }
     },
     "lcp_service_address": "localhost:50051",
     "mrenclave": $MRENCLAVE,

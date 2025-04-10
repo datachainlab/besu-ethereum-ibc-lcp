@@ -136,7 +136,7 @@ clean:
 
 .PHONY: fmt
 fmt:
-	@cargo fmt --all && cd ./enclave && cargo fmt --all
+	@cd ./enclave && cargo fmt --all
 
 .PHONY: yrly
 yrly:
