@@ -10,3 +10,6 @@
 [submodule "tests/e2e/chains/ethereum/contracts/lib/risc0-ethereum"]
 	path = tests/e2e/chains/ethereum/contracts/lib/risc0-ethereum
 	url = https://github.com/risc0/risc0-ethereum
+[submodule "lcp"]
+	path = lcp
+	url = https://github.com/datachainlab/lcp.git
