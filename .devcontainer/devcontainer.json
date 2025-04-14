@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.23"
+		},
+		"ghcr.io/devcontainers/features/rust:1": {
+			"version": "latest",
+			"profile": "minimal",
+			"targets": "x86_64-unknown-redox,x86_64-unknown-uefi"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "v20.19.0"
+		}
+	},
+
+	"onCreateCommand": ".devcontainer/oncreate.sh"
+}

@@ -1,7 +1,7 @@
 GETH_HTTP_PORT ?= 8546
 BEACON_HTTP_PORT ?= 19596
-GETH_VERSION ?= v1.15.2
-LODESTAR_VERSION ?= v1.27.0
+GETH_VERSION ?= v1.15.7
+LODESTAR_VERSION ?= v1.28.1
 DOCKER_COMPOSE ?= docker compose
 COMPOSE_UP_OPTS ?= -d
 HARDHAT ?= npx hardhat
@@ -26,7 +26,7 @@ network-down:
 # Build Docker Images
 #------------------------------------------------------------------------------
 .PHONY:build-images
-build-images: build-geth-image build-lodestar-image build-deposit-image
+build-images: build-geth-image build-lodestar-image build-deposit-image build-contract-image
 
 .PHONY:build-geth-image
 build-geth-image:
@@ -43,6 +43,9 @@ build-deposit-image:
 	GETH_HTTP_PORT=$(GETH_HTTP_PORT) \
 	docker compose build --no-cache deposit
 
+.PHONY:build-contract-image
+build-contract-image:
+	docker compose build --no-cache contracts
 
 #------------------------------------------------------------------------------
 # staking-deposit-cli / validator operation
@@ -124,7 +127,11 @@ shchk:
 #------------------------------------------------------------------------------
 .PHONY:deploy
 deploy:
-	$(DOCKER_COMPOSE) run contracts $(HARDHAT) run ./scripts/deploy.js --network eth_local
+	$(DOCKER_COMPOSE) run \
+	  -e LCP_ENCLAVE_DEBUG=$(LCP_ENCLAVE_DEBUG) \
+	  -e NO_RUN_LCP=$(NO_RUN_LCP) -e ZKDCAP=$(ZKDCAP) \
+	  -e LCP_ZKDCAP_RISC0_MOCK=$(LCP_ZKDCAP_RISC0_MOCK) \
+	  contracts $(HARDHAT) run ./scripts/deploy.js --network eth_local
 
 .PHONY: dep
 dep:
